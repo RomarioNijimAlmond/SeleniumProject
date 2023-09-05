@@ -11,10 +11,8 @@ public class Utils {
         try (InputStream input = new FileInputStream("./src/main/java/data/configuration.properties")) {
             Properties prop = new Properties();
 
-            // load a properties file
             prop.load(input);
 
-            // get the property value and print it out
             value = prop.getProperty(key);
 
         } catch (Exception e) {
